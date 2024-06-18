@@ -20,8 +20,7 @@ const projects = [
       "Enhanced object detection using YOLOv9 with CBAM for improved accuracy.",
     fullDescription:
       "This project focuses on object detection using the YOLOv9 architecture enhanced with the Convolutional Block Attention Module (CBAM). We created and annotated a custom dataset and utilized pretrained weights for model initialization. YOLOv9, the latest iteration in the YOLO series, is known for its real-time detection speed and high accuracy. By integrating CBAM, which enhances representational power by focusing on important features, the model's detection capabilities are significantly improved. The trained YOLOv9_CBAM model accurately identifies and classifies objects in images.",
-    image:
-      "https://i.ibb.co/v1ZSGwb/resize-17170063181985223797-Screenshot20240521181012.png",
+    image: "https://i.ibb.co/Tk6Cz7B/Screenshot-2024-05-21-181012.png",
     github: "https://github.com/swarna32/object_detection_using_yolov9_CBAM", // GitHub link
   },
   {
@@ -88,6 +87,15 @@ const projects = [
       "This project implements a system for recognizing handwritten digits using image processing techniques with OpenCV. The system compares a test image with candidate images to find the closest matching digit based on normalized cross-correlation (NCC). The dataset comprises candidate images representing digits 0-9 and a test image containing handwritten digits to be recognized. The preprocessing steps include loading the images with OpenCV, converting them to grayscale, applying adaptive thresholding for binarization, detecting contours to isolate individual digits, and resizing and normalizing the detected digits to 50x50 pixels. For the recognition process, contours are extracted from each candidate image to isolate the digit, which is then resized and normalized. The same preprocessing is applied to the test image to find digit contours. NCC is calculated between the candidate digit and each digit in the test image to find the closest match. The results display the closest matching digit from the candidate set alongside the test image with the matched digit highlighted, aiding in visualizing the system's performance.",
     image: "https://i.ibb.co/HxyML57/Screenshot-2024-05-30-005417.png",
     github: "https://github.com/swarna32/Handwritten_digit_recognition", // GitHub link
+  },
+  {
+    title: "Title Generation Using BERT Model",
+    shortDescription:
+      "Generating titles from summaries using a BERT-based Encoder-Decoder model.",
+    fullDescription:
+      "This project utilizes a BERT-based Encoder-Decoder model for generating titles from summaries. The model is fine-tuned on a dataset consisting of summaries and corresponding titles to learn the task of summarization. The dataset is sourced from a CSV file (arxivdata1.csv) and preprocessed to remove unnecessary columns and handle missing values. Tokenization is performed using the bert-base-uncased tokenizer, with summaries tokenized to a maximum length of 512 tokens and titles to 128 tokens. The EncoderDecoderModel from Hugging Face's Transformers library, initialized with BERT weights, is employed for model training. Training is conducted using Trainer from Transformers with a batch size of 4 for 10 epochs, evaluating after each epoch. The project includes a function for generating titles using beam search with num_beams=4. Evaluation metrics such as ROUGE scores (rouge1, rouge2, rougeL) assess the generated titles against actual titles from a validation subset.",
+    image: "https://i.ibb.co/R7mYSST/Screenshot-2024-06-18-195320.png",
+    github: "https://github.com/swarna32/Title-Generation-Using-BERT-Model",
   },
 ];
 
