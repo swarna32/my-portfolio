@@ -9,7 +9,6 @@ import styled from "styled-components";
 import Banner from "./components/Banner";
 import Papers from "./components/Papers";
 import { ThemeProvider } from "./ThemeContext";
-
 const App = () => {
   return (
     <ThemeProvider>
