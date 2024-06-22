@@ -14,15 +14,15 @@ const About = () => {
         <Highlight> ABOUT ME</Highlight>
       </Title>
       <ProgressBar />
+      <IntroText>
+      Hi, I'm Swarna Das, a recent graduate from Premier University passionate about Computer Science. My interests include software design and development, artificial intelligence, machine learning, computer vision, and natural language processing. I enjoy creating innovative solutions and staying updated with emerging technologies.
+      </IntroText>
       <Content>
         <ProfileImage
           src="https://i.ibb.co/jy2yhDV/Whats-App-Image-2024-05-31-at-5-24-14-PM.jpg"
           alt="Profile"
         />
         <Details>
-          <DetailTitle>
-            Hi, I am <Highlight>Swarna Das</Highlight>
-          </DetailTitle>
           <DetailItem>
             <Dot />
             <DetailText>Full Name: Swarna Das</DetailText>
@@ -142,11 +142,18 @@ const ProgressBar = styled.div`
   width: 150px;
   margin: 0 auto 2rem auto;
 `;
+
 const ProgressBar2 = styled.div`
   background: #00aaff;
   height: 4px;
   width: 320px;
   margin: 0 auto 2rem auto;
+`;
+
+const IntroText = styled.p`
+  text-align: center;
+  margin: 0 auto 2rem auto;
+  max-width: 800px;
 `;
 
 const Content = styled.div`
@@ -179,11 +186,6 @@ const Details = styled.div`
     width: 100%;
     align-items: center;
   }
-`;
-
-const DetailTitle = styled.h3`
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
 `;
 
 const DetailItem = styled.div`
